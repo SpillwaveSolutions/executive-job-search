@@ -1,0 +1,24 @@
+{
+  "name": "executive-job-search",
+  "version": "0.1.0",
+  "description": "Executive job-search ContentPack: job leads, roles, compensation bands, interview stages, offers, and target criteria.",
+  "author": {
+    "name": "Rick Hightower",
+    "url": "https://github.com/RichardHightower"
+  },
+  "homepage": "https://github.com/SpillwaveSolutions/executive-job-search",
+  "repository": "https://github.com/SpillwaveSolutions/executive-job-search",
+  "license": "MIT",
+  "keywords": [
+    "job-search",
+    "executive",
+    "interview",
+    "offer",
+    "career",
+    "claude-code",
+    "grok-build",
+    "codex",
+    "okf",
+    "content-pack"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ejs-plugin-marketplace",
+  "description": "Executive Job Search plugins for Claude Code (Grok Build compatible via Claude plugin zero-config)",
+  "owner": {
+    "name": "Rick Hightower",
+    "url": "https://github.com/RichardHightower"
+  },
+  "plugins": [
+    {
+      "name": "executive-job-search",
+      "source": "./",
+      "description": "Executive job-search ContentPack: job leads, roles, compensation bands, interview stages, offers, and target criteria.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Rick Hightower"
+      },
+      "homepage": "https://github.com/SpillwaveSolutions/executive-job-search",
+      "repository": "https://github.com/SpillwaveSolutions/executive-job-search",
+      "license": "MIT",
+      "keywords": [
+        "job-search",
+        "executive",
+        "interview",
+        "offer",
+        "career",
+        "claude-code",
+        "grok-build",
+        "codex",
+        "okf",
+        "content-pack"
+      ],
+      "category": "productivity"
+    }
+  ]
+}

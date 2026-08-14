@@ -1,0 +1,12 @@
+{
+  "name": "executive-job-search",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Executive Job Search \u2014 Claude Code / Grok Build / Codex plugin",
+  "scripts": {
+    "test": "python3 tests/test_ejs.py",
+    "validate": "python3 scripts/ejs_common.py validate --bundle sample-knowledge",
+    "init": "python3 scripts/ejs_common.py init-bundle --bundle sample-knowledge --title \"Executive Job Search\" --catalogs \"job-leads,roles,companies,interviews,offers,applications,criteria\""
+  },
+  "license": "MIT"
+}

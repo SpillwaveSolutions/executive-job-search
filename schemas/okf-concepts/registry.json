@@ -1,0 +1,101 @@
+{
+  "version": "0.1.0",
+  "plugin": "executive-job-search",
+  "types": [
+    {
+      "type": "JobLead",
+      "folder": null,
+      "description": "Open role under consideration"
+    },
+    {
+      "type": "Role",
+      "folder": null,
+      "description": "Normalized role type"
+    },
+    {
+      "type": "CompanyTarget",
+      "folder": null,
+      "description": "Company being tracked"
+    },
+    {
+      "type": "CompensationBand",
+      "folder": null,
+      "description": "Target or offered pay range"
+    },
+    {
+      "type": "LocationPreference",
+      "folder": null,
+      "description": "Onsite / hybrid / remote constraint"
+    },
+    {
+      "type": "RecruiterContact",
+      "folder": null,
+      "description": "External or internal recruiter"
+    },
+    {
+      "type": "HiringManager",
+      "folder": null,
+      "description": "Hiring manager contact"
+    },
+    {
+      "type": "InterviewStage",
+      "folder": null,
+      "description": "Screen, loop, exec, offer"
+    },
+    {
+      "type": "InterviewNote",
+      "folder": null,
+      "description": "Debrief from a round"
+    },
+    {
+      "type": "Offer",
+      "folder": null,
+      "description": "Written or verbal offer"
+    },
+    {
+      "type": "CounterOffer",
+      "folder": null,
+      "description": "Counter proposed"
+    },
+    {
+      "type": "RejectionReason",
+      "folder": null,
+      "description": "Why it died"
+    },
+    {
+      "type": "Application",
+      "folder": null,
+      "description": "Submitted application"
+    },
+    {
+      "type": "Referral",
+      "folder": null,
+      "description": "Internal or network intro"
+    },
+    {
+      "type": "TargetCriteria",
+      "folder": null,
+      "description": "Must-have / nice-to-have bar"
+    },
+    {
+      "type": "MarketSignal",
+      "folder": null,
+      "description": "Comp or demand note"
+    },
+    {
+      "type": "CompanyResearch",
+      "folder": null,
+      "description": "Diligence notes"
+    },
+    {
+      "type": "CultureNote",
+      "folder": null,
+      "description": "Culture observation"
+    },
+    {
+      "type": "DecisionRationale",
+      "folder": null,
+      "description": "Why pursue or decline"
+    }
+  ]
+}

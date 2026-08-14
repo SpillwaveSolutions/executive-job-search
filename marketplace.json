@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ejs-plugin-marketplace",
+  "owner": {
+    "name": "Rick Hightower",
+    "url": "https://github.com/RichardHightower"
+  },
+  "plugins": [
+    {
+      "name": "executive-job-search",
+      "source": "./",
+      "description": "Executive Job Search",
+      "version": "0.1.0"
+    }
+  ]
+}
