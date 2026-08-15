@@ -84,7 +84,7 @@ python3 scripts/ejs_common.py write \
   --type JobLead \
   --folder job-leads \
   --title "Example" \
-  --author "Grok Bot: Executive Job Search"
+  --author "${SECOND_BRAIN_IDENTITY:?claim an identity first: brain.py whoami --claim}"
 ```
 
 Never invent `rel` values. Never write types owned by another plugin.
