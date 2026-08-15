@@ -8,7 +8,8 @@ description: Capture a Executive Job Search noun into the shared second brain vi
 ## Process
 
 1. Identify the noun type from the allowed list (see README).
-2. Collect title, status, author identity, and optional typed links.
+2. Resolve identity: run `whoami`. If unclaimed, ask the user what to sign as, then `whoami --claim`. Do not invent a Grok Bot name.
+3. Collect title, status, and optional typed links.
 3. Write with the helper — do not hand-author frontmatter unless the user insists:
 
 ```bash
@@ -17,7 +18,7 @@ python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ejs_common.py" write \
   --type JobLead \
   --folder job-leads \
   --title "Example JobLead" \
-  --author "Grok Bot: Executive Job Search" \
+  --author "${SECOND_BRAIN_IDENTITY:?claim an identity first: brain.py whoami --claim}" \
   --tags "ejs"
 ```
 
