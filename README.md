@@ -94,10 +94,33 @@ Never invent `rel` values. Never write types owned by another plugin.
 
 ## Related plugins
 
-- [second-brain-core](https://github.com/SpillwaveSolutions/second-brain-core) — shared pack engine and typed-edge conventions
-- [project-knowledge-capture](https://github.com/SpillwaveSolutions/project-knowledge-capture) — the “why” second brain
-- [system-architecture-capture](https://github.com/SpillwaveSolutions/system-architecture-capture) — the “what is running” second brain
-- [wiki_ticket_sdd](https://github.com/SpillwaveSolutions/wiki_ticket_sdd) — visible work log
+### ContentPack suite
+
+- [second-brain-core](https://github.com/SpillwaveSolutions/second-brain-core)
+- [executive-coordination](https://github.com/SpillwaveSolutions/executive-coordination)
+- [account-management](https://github.com/SpillwaveSolutions/account-management)
+- [sales-pipeline](https://github.com/SpillwaveSolutions/sales-pipeline)
+- [executive-job-search](https://github.com/SpillwaveSolutions/executive-job-search)
+- [consulting-leads](https://github.com/SpillwaveSolutions/consulting-leads)
+- [content-media](https://github.com/SpillwaveSolutions/content-media)
+- [news-digest](https://github.com/SpillwaveSolutions/news-digest)
+- [gtm-positioning](https://github.com/SpillwaveSolutions/gtm-positioning)
+- [second-brain-marketplace](https://github.com/SpillwaveSolutions/second-brain-marketplace)
+- [second-brain-starter](https://github.com/SpillwaveSolutions/second-brain-starter)
+
+### Foundation
+
+- [okf-plugin](https://github.com/SpillwaveSolutions/okf-plugin) — Open Knowledge Format graph engine
+- [project-knowledge-capture](https://github.com/SpillwaveSolutions/project-knowledge-capture) — Project Knowledge Capture. The why second brain.
+- [system-architecture-capture](https://github.com/SpillwaveSolutions/system-architecture-capture) — System Architecture Capture. The what-is-running second brain.
+- [data-engineering-knowledge-capture](https://github.com/SpillwaveSolutions/data-engineering-knowledge-capture) — Data Engineering Knowledge Capture. The data-plane second brain.
+- [wiki_ticket_sdd](https://github.com/SpillwaveSolutions/wiki_ticket_sdd) — WikiTicket SDD. Visible work log. Append-only ULID JSONL plus fold.
+- [okf-agent-graph](https://github.com/SpillwaveSolutions/okf-agent-graph) — AGER. Orchestrator / Doer / Judge / Synthesizer.
+
+
+## Onboarding
+
+Grok Bot and other host agents should start at [docs/ONBOARDING.md](docs/ONBOARDING.md). That file is the history of the LLM-wiki effort, the destination state (Grok Bots and local agents sharing one git-native second brain), and the canonical public repo list.
 
 ## Multi-host
 

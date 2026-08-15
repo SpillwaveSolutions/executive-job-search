@@ -68,15 +68,61 @@ def parse_frontmatter(text: str) -> tuple[dict, str]:
     parts = text.split("---", 2)
     if len(parts) < 3:
         return {}, text
-    meta = {}
     if yaml:
-        meta = yaml.safe_load(parts[1]) or {}
-    else:
-        for line in parts[1].splitlines():
-            if ":" in line:
-                k, v = line.split(":", 1)
-                meta[k.strip()] = v.strip().strip('"').strip("'")
-    return meta, parts[2].lstrip("\n")
+        return yaml.safe_load(parts[1]) or {}, parts[2].lstrip("\n")
+    return _parse_frontmatter_naive(parts[1]), parts[2].lstrip("\n")
+
+
+def _parse_frontmatter_naive(block: str) -> dict:
+    """Parse simple YAML frontmatter without PyYAML.
+
+    Supports scalars, string lists, and list-of-dicts used for typed links:
+      links:
+        - target: /clients/northstar.md
+          rel: belongs_to
+    """
+    meta: dict = {}
+    key: str | None = None
+    acc: list | None = None
+    current: dict | None = None
+    for raw in block.splitlines():
+        if not raw.strip():
+            continue
+        if re.match(r"^[A-Za-z0-9_]+:\s*$", raw):
+            key = raw.split(":", 1)[0].strip()
+            acc = []
+            current = None
+            meta[key] = acc
+            continue
+        if key is not None and acc is not None and raw.startswith("  - "):
+            rest = raw[4:].strip()
+            if ":" in rest:
+                current = {}
+                k, v = rest.split(":", 1)
+                current[k.strip()] = v.strip().strip('"').strip("'")
+                acc.append(current)
+            else:
+                current = None
+                acc.append(rest.strip('"').strip("'"))
+            continue
+        if key is not None and current is not None and raw.startswith("    "):
+            if ":" in raw:
+                k, v = raw.strip().split(":", 1)
+                current[k.strip()] = v.strip().strip('"').strip("'")
+            continue
+        if ":" in raw and not raw.startswith(" "):
+            key = None
+            acc = None
+            current = None
+            k, v = raw.split(":", 1)
+            val = v.strip().strip('"').strip("'")
+            if val.lower() == "true":
+                meta[k.strip()] = True
+            elif val.lower() == "false":
+                meta[k.strip()] = False
+            else:
+                meta[k.strip()] = val
+    return meta
 
 
 def dump_frontmatter(meta: dict) -> str:

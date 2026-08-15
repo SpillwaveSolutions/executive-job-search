@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0 — 2026-08-15
+
+- Grok Bot onboarding: `docs/ONBOARDING.md` (LLM-wiki history, destination state, public repo list)
+- Full type ownership in `docs/GROK_BOT.md` (every registry noun, not a subset)
+- Registry folders filled so writes land in the right catalog
+- Linked Northstar sample graph (typed edges, packable in 2 hops)
+- Version stamps aligned across plugin.json, marketplace, and package.json
+- README related-plugins list now covers the whole suite plus foundations
+
 ## 0.2.0 — 2026-08-15
 
 - Write isolation: `scripts/brain_session.py` (worktree + branch + PR)

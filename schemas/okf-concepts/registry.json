@@ -1,100 +1,100 @@
 {
-  "version": "0.1.0",
+  "version": "0.3.0",
   "plugin": "executive-job-search",
   "types": [
     {
       "type": "JobLead",
-      "folder": null,
+      "folder": "job-leads",
       "description": "Open role under consideration"
     },
     {
       "type": "Role",
-      "folder": null,
+      "folder": "roles",
       "description": "Normalized role type"
     },
     {
       "type": "CompanyTarget",
-      "folder": null,
+      "folder": "companies",
       "description": "Company being tracked"
     },
     {
       "type": "CompensationBand",
-      "folder": null,
+      "folder": "compensation-bands",
       "description": "Target or offered pay range"
     },
     {
       "type": "LocationPreference",
-      "folder": null,
+      "folder": "location-preferences",
       "description": "Onsite / hybrid / remote constraint"
     },
     {
       "type": "RecruiterContact",
-      "folder": null,
+      "folder": "recruiter-contacts",
       "description": "External or internal recruiter"
     },
     {
       "type": "HiringManager",
-      "folder": null,
+      "folder": "hiring-managers",
       "description": "Hiring manager contact"
     },
     {
       "type": "InterviewStage",
-      "folder": null,
+      "folder": "interview-stages",
       "description": "Screen, loop, exec, offer"
     },
     {
       "type": "InterviewNote",
-      "folder": null,
+      "folder": "interview-notes",
       "description": "Debrief from a round"
     },
     {
       "type": "Offer",
-      "folder": null,
+      "folder": "offers",
       "description": "Written or verbal offer"
     },
     {
       "type": "CounterOffer",
-      "folder": null,
+      "folder": "counter-offers",
       "description": "Counter proposed"
     },
     {
       "type": "RejectionReason",
-      "folder": null,
+      "folder": "rejection-reasons",
       "description": "Why it died"
     },
     {
       "type": "Application",
-      "folder": null,
+      "folder": "applications",
       "description": "Submitted application"
     },
     {
       "type": "Referral",
-      "folder": null,
+      "folder": "referrals",
       "description": "Internal or network intro"
     },
     {
       "type": "TargetCriteria",
-      "folder": null,
+      "folder": "target-criterias",
       "description": "Must-have / nice-to-have bar"
     },
     {
       "type": "MarketSignal",
-      "folder": null,
+      "folder": "market-signals",
       "description": "Comp or demand note"
     },
     {
       "type": "CompanyResearch",
-      "folder": null,
+      "folder": "company-researchs",
       "description": "Diligence notes"
     },
     {
       "type": "CultureNote",
-      "folder": null,
+      "folder": "culture-notes",
       "description": "Culture observation"
     },
     {
       "type": "DecisionRationale",
-      "folder": null,
+      "folder": "decision-rationales",
       "description": "Why pursue or decline"
     }
   ]

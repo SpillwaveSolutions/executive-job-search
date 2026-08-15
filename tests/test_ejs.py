@@ -185,9 +185,19 @@ def test_isolation_two_sessions_do_not_clobber():
         assert (knowledge / "job-leads" / "session-b-note.md").exists()
 
 
+def test_sample_pack_walks():
+    root = "Northstar JobLead"
+    r = run("pack", "--bundle", str(SAMPLE), "--root", root, "--hops", "2")
+    assert r.returncode == 0, r.stdout + r.stderr
+    data = json.loads(r.stdout)
+    assert data.get("ok") is True
+    assert len(data.get("nodes") or []) >= 3, data
+
+
 if __name__ == "__main__":
     test_sample_validates()
     test_write_requires_author()
     test_init_and_write()
     test_isolation_two_sessions_do_not_clobber()
+    test_sample_pack_walks()
     print("ok")

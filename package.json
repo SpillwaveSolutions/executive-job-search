@@ -1,6 +1,6 @@
 {
   "name": "executive-job-search",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
   "description": "Executive Job Search \u2014 Claude Code / Grok Build / Codex plugin",
   "scripts": {
