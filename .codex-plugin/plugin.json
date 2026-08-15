@@ -1,0 +1,4 @@
+{
+  "name": "second-brain",
+  "hooks": "./hooks/hooks.json"
+}

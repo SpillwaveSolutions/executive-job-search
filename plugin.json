@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "executive-job-search",
+  "version": "0.2.0",
+  "description": "Executive job-search ContentPack: roles, interviews, offers, criteria.",
+  "author": {
+    "name": "Rick Hightower",
+    "url": "https://github.com/RichardHightower"
+  },
+  "homepage": "https://github.com/SpillwaveSolutions/executive-job-search",
+  "repository": "https://github.com/SpillwaveSolutions/executive-job-search",
+  "license": "MIT",
+  "keywords": [
+    "job-search",
+    "second-brain",
+    "agent-plugins"
+  ]
+}

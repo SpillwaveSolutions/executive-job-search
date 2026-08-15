@@ -7,3 +7,6 @@ node_modules/
 .okf/.index/
 knowledge/.index/
 .pytest_cache/
+.brain-sessions/
+.brain-worktrees/
+.brain-session.json

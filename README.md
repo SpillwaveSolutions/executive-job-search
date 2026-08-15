@@ -25,6 +25,7 @@ Point the plugin at a shared knowledge root (default `knowledge/`). All sibling 
 | `/ejs-capture` | Capture a noun into the shared second brain (deterministic write) |
 | `/ejs-pack` | Build a bounded ContextPack from a root concept |
 | `/ejs-validate` | Validate frontmatter, types, and links |
+| `/ejs-session` | Open or close an isolated write session (worktree + PR) |
 | `/ejs-doctor` | Health check of the bundle this plugin owns |
 
 ## Nouns this plugin may write
@@ -84,7 +85,7 @@ python3 scripts/ejs_common.py write \
   --type JobLead \
   --folder job-leads \
   --title "Example" \
-  --author "${SECOND_BRAIN_IDENTITY:?claim an identity first: brain.py whoami --claim}"
+  --author "Grok Bot: Executive Job Search"
 ```
 
 Never invent `rel` values. Never write types owned by another plugin.
@@ -97,6 +98,23 @@ Never invent `rel` values. Never write types owned by another plugin.
 - [project-knowledge-capture](https://github.com/SpillwaveSolutions/project-knowledge-capture) — the “why” second brain
 - [system-architecture-capture](https://github.com/SpillwaveSolutions/system-architecture-capture) — the “what is running” second brain
 - [wiki_ticket_sdd](https://github.com/SpillwaveSolutions/wiki_ticket_sdd) — visible work log
+
+## Multi-host
+
+Works with Claude Code, Grok Build, Codex, Agent Plugins 1.0 clients, Grok Bot, and LangChain Deep Agents.
+
+| Host | How to load |
+|------|-------------|
+| Claude Code | marketplace + plugin install |
+| Grok Build | zero-config Claude plugin |
+| Codex | Agent Skills / `hooks/hooks.json` |
+| Agent Plugins clients | root `plugin.json` + `skills/` |
+| Grok Bot | [docs/GROK_BOT.md](docs/GROK_BOT.md) |
+| LangChain Deep Agents | [docs/LANG_CHAIN_DEEP_AGENTS.md](docs/LANG_CHAIN_DEEP_AGENTS.md) |
+
+Write isolation (worktree + PR) lives in second-brain-core: [docs/ISOLATION.md](https://github.com/SpillwaveSolutions/second-brain-core/blob/main/docs/ISOLATION.md). Point `SECOND_BRAIN_ROOT` at the session bundle. Never hard-code a private remote.
+
+Eight job-function plugins plus core. Knowledge root is always a local path or env the human already owns.
 
 ## License
 
