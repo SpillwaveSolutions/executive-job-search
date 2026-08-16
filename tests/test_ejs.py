@@ -114,7 +114,7 @@ def test_isolation_two_sessions_do_not_clobber():
             "--bundle",
             "knowledge",
             "--actor",
-            "claude-code/threatiq",
+            "claude-code/lumenfield-detector",
             "--host",
             "claude-code",
             "--plugin",
@@ -151,7 +151,7 @@ def test_isolation_two_sessions_do_not_clobber():
             "--title",
             "Session A Note",
             "--author",
-            "claude-code/threatiq",
+            "claude-code/lumenfield-detector",
         )
         assert r.returncode == 0, r.stdout + r.stderr
         r = run(

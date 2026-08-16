@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 — 2026-08-16
+
+- Privacy: isolation tests use only fictional **lumenfield-detector** / **northstar-console** actors.
+
+
 ## 0.3.0 — 2026-08-15
 
 - Grok Bot onboarding: `docs/ONBOARDING.md` (LLM-wiki history, destination state, public repo list)
