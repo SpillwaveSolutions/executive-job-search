@@ -122,6 +122,16 @@ dumped graph.
 | Working | Current turn + packed context |
 | Institutional | The private OKF Markdown tree |
 
+## Cursor (Grok Bot coding host)
+
+Grok Bot often opens a **Cursor cloud agent** against the knowledge tree.
+That session does **not** automatically have this plugin installed.
+
+- Local Cursor: add the marketplace, then install this plugin. See [CURSOR.md](CURSOR.md).
+- Cloud Cursor on the brain: follow this file plus `AGENTS.md` in the knowledge tree. Plugin install is optional. The write protocol is not.
+- This pack ships `.cursor-plugin/plugin.json` (Cursor Plugins) and a root `plugin.json` (Agent Plugins 1.0). Cursor loads both. Skills stay in `skills/`.
+- Never name a private remote. Pack roots are packing hints, not access control.
+
 ## Related public packages
 
 - [second-brain-core](https://github.com/SpillwaveSolutions/second-brain-core)

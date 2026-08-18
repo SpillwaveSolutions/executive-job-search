@@ -124,7 +124,7 @@ Grok Bot and other host agents should start at [docs/ONBOARDING.md](docs/ONBOARD
 
 ## Multi-host
 
-Works with Claude Code, Grok Build, Codex, Agent Plugins 1.0 clients, Grok Bot, and LangChain Deep Agents.
+Works with Claude Code, Grok Build, Codex, Cursor, Agent Plugins 1.0 clients, Grok Bot, and LangChain Deep Agents.
 
 | Host | How to load |
 |------|-------------|
@@ -133,6 +133,7 @@ Works with Claude Code, Grok Build, Codex, Agent Plugins 1.0 clients, Grok Bot, 
 | Codex | Agent Skills / `hooks/hooks.json` |
 | Agent Plugins clients | root `plugin.json` + `skills/` |
 | Grok Bot | [docs/GROK_BOT.md](docs/GROK_BOT.md) |
+| Cursor | [docs/CURSOR.md](docs/CURSOR.md) — `.cursor-plugin` + Agent Plugins 1.0 |
 | LangChain Deep Agents | [docs/LANG_CHAIN_DEEP_AGENTS.md](docs/LANG_CHAIN_DEEP_AGENTS.md) |
 
 Write isolation (worktree + PR) lives in second-brain-core: [docs/ISOLATION.md](https://github.com/SpillwaveSolutions/second-brain-core/blob/main/docs/ISOLATION.md). Point `SECOND_BRAIN_ROOT` at the session bundle. Never hard-code a private remote.
