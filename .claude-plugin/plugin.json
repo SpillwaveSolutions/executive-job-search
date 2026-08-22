@@ -1,6 +1,6 @@
 {
   "name": "executive-job-search",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Executive job-search ContentPack: job leads, roles, compensation bands, interview stages, offers, and target criteria.",
   "author": {
     "name": "Rick Hightower",
@@ -19,6 +19,8 @@
     "grok-build",
     "codex",
     "okf",
-    "content-pack"
+    "content-pack",
+    "worklog",
+    "wiki-ticket-sdd"
   ]
 }

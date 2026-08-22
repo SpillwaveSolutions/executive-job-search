@@ -1,6 +1,6 @@
 {
   "name": "executive-job-search",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Executive job-search ContentPack: roles, interviews, offers, criteria.",
   "author": {
     "name": "Rick Hightower"
@@ -12,7 +12,9 @@
     "job-search",
     "second-brain",
     "agent-plugins",
-    "cursor"
+    "cursor",
+    "worklog",
+    "wiki-ticket-sdd"
   ],
   "skills": "skills/",
   "rules": ".cursor/rules/",

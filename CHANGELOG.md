@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.4
+
+- WikiTicket SDD (worklog) is the tracking system for this plugin.
+
+
 ## 0.3.3
 
 - Three-host hooks: Codex + Cursor-native when Claude hooks exist.
