@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "description": "Cursor-native hook port of Claude Code hooks.json. Shared scripts; event names mapped.",
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "python3 -c \"print('Second brain: claim SECOND_BRAIN_IDENTITY; write only via pack scripts; isolate writes with brain_session.py open')\"",
+        "timeout": 5
+      }
+    ]
+  }
+}

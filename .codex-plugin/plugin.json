@@ -1,4 +1,4 @@
 {
   "name": "second-brain",
-  "hooks": "./hooks/hooks.json"
+  "hooks": "./hooks/codex-hooks.json"
 }
